@@ -89,6 +89,23 @@ main .introduction {
     text-align: center;
 }
 
+main .btn_big {
+    font-family: var(--main-font);
+    background: #fafafa;
+    padding: 0.7rem 1.4rem;  
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    display: inline-flex;
+}
+
+main .btn_big img {
+    height: 20px;
+    width: auto;
+    margin-right: 0.5rem;
+}
+
 footer {
     color: #585858;
     font-family: var(--main-font);
