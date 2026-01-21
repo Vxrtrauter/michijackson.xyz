@@ -11,12 +11,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: #141414;
+    background: #0f1011;
 }
 
 header {
     height: 65px;
-    background: #222222;
+    background: #1a1c1d;
     color: #fff;
     padding: 1rem 2rem;
     display: flex;
@@ -56,11 +56,29 @@ nav a.btn.active {
 main {
     font-family: var(--main-font);
     color: #fafafa;
-    padding: 2rem;
+    padding: 3rem;
 }
 
 main h1.title {
-    font-size: 2.5rem;
+    font-size: 3.0rem;
+    line-height: 3rem;
+    margin-top: 1.8rem;
+}
+
+main p.title_subtext {
+    margin-top: 0.5rem;
+}
+
+main img.softwaremanager-image {
+    margin-top: 2rem;;
+}
+
+.inline-block {
+    display: inline;
+}
+
+main .introduction {
+    text-align: center;
 }
 
 footer {
