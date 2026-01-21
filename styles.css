@@ -60,21 +60,29 @@ main {
 }
 
 main h1.title {
-    font-size: 3.0rem;
-    line-height: 3rem;
+    font-size: 4.0rem;
+    line-height: 4rem;
     margin-top: 1.8rem;
 }
 
 main p.title_subtext {
     margin-top: 0.5rem;
+    font-size: 1.2rem;
 }
 
 main img.softwaremanager-image {
-    margin-top: 2rem;;
+    margin-top: 0rem;
+}
+
+main .introduction-text {
+    text-align: right;
+    margin-right: -3rem;
+    margin-top: 3rem;
 }
 
 .inline-block {
-    display: inline;
+    display: inline-block;
+    vertical-align: top;
 }
 
 main .introduction {
