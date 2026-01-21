@@ -1,15 +1,22 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
+:root {
+    --main-font: "Manrope", sans-serif;
+}
+
+
 body {
     font-family: system-ui, sans-serif;
     line-height: 1.5;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background: #141414;
 }
 
 header {
-    background: #141414;
+    height: 65px;
+    background: #222222;
     color: #fff;
     padding: 1rem 2rem;
     display: flex;
@@ -19,27 +26,44 @@ header {
 
 nav a.btn {
     display: inline-block;
-    background: #dd06cb;
-    padding: 0.25rem 1rem;
+    background: #dd06cb00;
+    padding: 0.4rem 0.8rem;
     margin-left: 0.5rem;
     text-decoration: none;
-    color: #ffffff;
+    color: #fafafa;
     border-radius: 8px;
-    box-shadow: 0 0 6px 1px #dd06cb;
-    transition: box-shadow 0.3s;
+    box-shadow: 0 0 6px 1px #dd06cb00;
+    font-family: var(--main-font);
+    transition: background 0.3s, color 0.3s;
 }
 
 nav a.btn:hover {
-    box-shadow: 0 0 12px 2px #dd06cb;
+    background: #dd06cb2d;
+    color: #ffd1fd;
+}
+
+nav a.btn.active {
+    background: #dd06cb56;
+    color: #ffb9fb;
+}
+
+.logo img {
+    height: 55px;
+    width: auto;
+    padding: 0.20rem 0;
 }
 
 main {
-    flex: 1;  
+    font-family: var(--main-font);
+    color: #fafafa;
     padding: 2rem;
 }
 
 footer {
-    background: #eee;
-    text-align: center;
+    color: #6a6a6a;
+    font-family: var(--main-font);
+    align-self: center;
     padding: 1rem;
+    position: fixed;
+    bottom: 0;
 }
