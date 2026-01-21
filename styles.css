@@ -34,17 +34,17 @@ nav a.btn {
     border-radius: 8px;
     box-shadow: 0 0 6px 1px #dd06cb00;
     font-family: var(--main-font);
-    transition: background 0.3s, color 0.3s;
+    transition: background 0.5s, color 0.5s;
 }
 
 nav a.btn:hover {
-    background: #dd06cb2d;
+    background: #db65d517;
     color: #ffd1fd;
 }
 
 nav a.btn.active {
-    background: #dd06cb56;
-    color: #ffb9fb;
+    background: #db65d55d;
+    color: #fdd2fc;
 }
 
 .logo img {
