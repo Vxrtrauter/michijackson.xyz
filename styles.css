@@ -75,9 +75,16 @@ main img.softwaremanager-image {
 }
 
 main .introduction-text {
+    position: relative;
     text-align: right;
     margin-right: -3rem;
     margin-top: 3rem;
+    z-index: 2;
+}
+
+.introduction-image {
+    position: relative;
+    z-index: 1;
 }
 
 .inline-block {
@@ -87,23 +94,41 @@ main .introduction-text {
 
 main .introduction {
     text-align: center;
+    position: relative;
+
 }
 
 main .btn_big {
     font-family: var(--main-font);
-    background: #fafafa;
+    background: #1a1c1d;
     padding: 0.7rem 1.4rem;  
     margin-top: 1.5rem;
     border: none;
     border-radius: 10px;
     align-items: center;
     display: inline-flex;
+    color: #fafafa;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 main .btn_big img {
     height: 20px;
     width: auto;
     margin-right: 0.5rem;
+}
+
+main .btn_big.github {
+    margin-right: 1rem;
+}
+
+main .btn_big.download {
+    background: #ca62c5;
+    color: #0f1011;
+}
+
+.softwaremanager-image {
+    pointer-events: none; 
 }
 
 footer {
