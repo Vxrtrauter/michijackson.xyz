@@ -22,6 +22,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    user-select: none;
 }
 
 nav a.btn {
@@ -72,6 +73,7 @@ main p.title_subtext {
 
 main img.softwaremanager-image {
     margin-top: 0rem;
+    user-select: none;
 }
 
 main .introduction-text {
@@ -80,6 +82,7 @@ main .introduction-text {
     margin-right: -3rem;
     margin-top: 3rem;
     z-index: 2;
+    user-select: none;
 }
 
 .introduction-image {
@@ -95,8 +98,13 @@ main .introduction-text {
 main .introduction {
     text-align: center;
     position: relative;
-
+    font-size: 0
 }
+
+main .introduction > * {
+    font-size: 1rem;
+}
+
 
 main .btn_big {
     font-family: var(--main-font);
@@ -110,6 +118,7 @@ main .btn_big {
     color: #fafafa;
     text-decoration: none;
     font-weight: bold;
+    user-select: none;
 }
 
 main .btn_big img {
@@ -127,6 +136,11 @@ main .btn_big.download {
     color: #0f1011;
 }
 
+main .introduction-text h1,
+main .introduction-text p {
+    user-select: text;
+}
+
 .softwaremanager-image {
     pointer-events: none; 
 }
@@ -138,4 +152,9 @@ footer {
     padding: 1rem;
     position: fixed;
     bottom: 0;
+    user-select: none;
+}
+
+::selection {
+    background: #db65d528;
 }
