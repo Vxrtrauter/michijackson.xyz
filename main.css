@@ -142,7 +142,7 @@ main .btn_big.download {
 }
 
 main .btn_big.download:hover {
-    background: #c259bc;
+    background: #b551b0;
 }
 
 main .introduction-text h1,
@@ -166,4 +166,59 @@ footer {
 
 ::selection {
     background: #db65d528;
+}
+
+@media(max-width: 768px) {
+
+    header {
+        padding: 1rem;
+    }
+
+    main {
+        margin: 0rem;
+        padding: 1rem;
+        
+    }
+
+    main .introduction {
+        display: block;
+    }
+
+
+
+    main .introduction-text {
+        position: relative;
+        text-align: left;
+        margin-top: 1rem;
+        z-index: 2;
+        user-select: none;
+        margin-right: 0rem;
+
+    }
+
+    main h1.hometitle {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .introduction-image {
+        display: none;
+    }
+
+
+    main .btn_big {
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }
