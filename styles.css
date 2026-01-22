@@ -27,7 +27,6 @@ header {
 
 nav a.btn {
     display: inline-block;
-    background: #dd06cb00;
     padding: 0.4rem 0.8rem;
     margin-left: 0.5rem;
     text-decoration: none;
@@ -60,7 +59,7 @@ main {
     padding: 3rem;
 }
 
-main h1.title {
+main h1.hometitle {
     font-size: 4.0rem;
     line-height: 4rem;
     margin-top: 1.8rem;
