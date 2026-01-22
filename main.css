@@ -128,11 +128,21 @@ main .btn_big img {
 
 main .btn_big.github {
     margin-right: 1rem;
+    transition: background 0.5s;
+}
+
+main .btn_big.github:hover {
+    background: #18191a;
 }
 
 main .btn_big.download {
     background: #ca62c5;
     color: #0f1011;
+    transition: background 0.5s;
+}
+
+main .btn_big.download:hover {
+    background: #c259bc;
 }
 
 main .introduction-text h1,
