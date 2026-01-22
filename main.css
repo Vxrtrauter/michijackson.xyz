@@ -154,6 +154,11 @@ main .introduction-text p {
     pointer-events: none; 
 }
 
+.softwaremanager-image-2 {
+    pointer-events: none; 
+    display: none;
+}
+
 footer {
     color: #585858;
     font-family: var(--main-font);
@@ -168,7 +173,15 @@ footer {
     background: #db65d528;
 }
 
-@media(max-width: 768px) {
+.program-preview {
+    box-sizing: inherit;
+    background: #1a1c1d;
+    width: auto;
+    height: 20rem;
+    border-radius: 10px;
+}
+
+@media(max-width: 560px) {
 
     header {
         padding: 1rem;
@@ -182,43 +195,103 @@ footer {
 
     main .introduction {
         display: block;
+        margin-top: -1rem;
+        padding: 1rem;
     }
-
-
 
     main .introduction-text {
         position: relative;
-        text-align: left;
-        margin-top: 1rem;
+        text-align: center;
+        margin-top: 0rem;
         z-index: 2;
         user-select: none;
         margin-right: 0rem;
-
+        padding-bottom: 2rem;
     }
 
     main h1.hometitle {
         font-size: 2rem;
         line-height: 2.2rem;
+        text-align: left;
+    }
+
+    main p.title_subtext {
+        text-align: left;
     }
 
     .introduction-image {
         display: none;
     }
 
-
     main .btn_big {
+        display: block;
+        margin: 1rem auto;
+    }
+
+    main .btn_big.github{
+        margin-right: 0rem;
+    }
+}
+
+@media (min-width: 561px) and (max-width: 1397px) {
+
+    header {
+        padding: 1rem;
+    }
+
+    main {
+        margin: 0rem;
+        padding: 1rem;
         
     }
 
+    main .introduction {
+        display: flex;
+        margin-top: -1rem;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    main .introduction-text {
+        position: relative;
+        text-align: center;
+        margin-top: 0rem;
+        z-index: 2;
+        user-select: none;
+        margin-right: 0rem;
+        padding-bottom: 2rem;
+    }
 
+    main h1.hometitle {
+        font-size: 2rem;
+        line-height: 2.2rem;
+        text-align: center;
+    }
 
+    main p.title_subtext {
+        text-align: center;
+    }
 
+    .softwaremanager-image {
+        display: none;
+    }
 
+    .softwaremanager-image-2 {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
+    .introduction-image {
+        width: 100%;
+        max-width: 50rem;
+        user-select: none;
+    }
 
-
-
-
-
+    main .introduction .inline-block {
+    display: block;
+    }
 }
