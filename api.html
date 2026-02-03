@@ -22,13 +22,43 @@
 
     <main>
         <h1 class="title">API Documentation</h1>
-        <p>this is literally the most simple API ever</p>
+        <p>This API allows you to search for posts on rutracker.</p>
 
         <div class="base-api-url-frame">
-            <h3>Base API URL</h3>
-            <p class="base-api-url">https://michijackson.xyz/api/v1/</p>
+            <h3>API URL</h3>
+            <p class="api-url">https://api.michijackson.xyz/</p>
         </div>
 
+        <br>
+
+        <h2>Example Request</h2>
+
+        <div class="request-type-container">
+            <p><span class="request-type">GET</span> <span class="request-type-subcontainer">api.michijackson.xyz/search/keks</span></p>
+        </div>
+        
+
+        <div class="json-response">
+            <h3>Response</h3>
+        
+
+            
+        
+        <p class="api-response"><span style="color: #5c5c5c">{</span>
+  "cached"<span style="color: #5c5c5c">:</span> <span style="color: #ffab4a">false</span><span style="color: #5c5c5c">,</span>
+  "count"<span style="color: #5c5c5c">:</span> <span style="color: #66ff80">1</span><span style="color: #5c5c5c">,</span>
+  "data"<span style="color: #5c5c5c">:</span> <span style="color: #5c5c5c">[</span>
+    <span style="color: #5c5c5c">{</span>
+      "author"<span style="color: #5c5c5c">:</span> <span style="color: #db65d5">"Viterrson"</span><span style="color: #5c5c5c">,</span>
+      "id"<span style="color: #5c5c5c">:</span> <span style="color: #66ff80">1</span><span style="color: #5c5c5c">,</span>
+      "title"<span style="color: #5c5c5c">:</span> <span style="color: #db65d5">"(Hard - Rock) Keks - Keks - 1983, MP3, 320 kbps"</span><span style="color: #5c5c5c">,</span>
+      "url"<span style="color: #5c5c5c">:</span> <span style="color: #db65d5">"https://rutracker.org/forum/viewtopic.php?t=3835559"</span>
+    <span style="color: #5c5c5c">}</span>
+  <span style="color: #5c5c5c">],</span>
+  "query"<span style="color: #5c5c5c">:</span> <span style="color: #db65d5">"keks"</span><span style="color: #5c5c5c">,</span>
+  "success"<span style="color: #5c5c5c">:</span> <span style="color: #ffab4a">true</span>
+<span style="color: #5c5c5c">}</span></p>
+        </div>
 
     </main>
 

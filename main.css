@@ -187,6 +187,49 @@ footer {
     border-radius: 10px;
 }
 
+p.api-response {
+    white-space: pre;
+    font-family: monospace;
+    background: #151718;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.json-response {
+        background: #1a1c1d;
+        padding: 1rem;
+        border-radius: 10px;
+        margin-top: 1rem;
+}
+
+.request-type {
+    color: #fdd2fc;
+    padding: 1px 6px;
+    background: #db65d55d;
+    border-radius: 6px;
+}
+
+.request-type-container {
+    background: #1a1c1d;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.request-type-subcontainer {
+    background: #1a1c1d;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.api-url {
+    background: #151718;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
 @media(max-width: 560px) {
 
     header {
