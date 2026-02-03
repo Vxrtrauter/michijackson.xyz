@@ -198,7 +198,7 @@ p.api-response {
     margin-top: 1rem;
 }
 
-.json-response {
+.api-response-frame {
         background: #1a1c1d;
         padding: 1rem;
         border-radius: 10px;
