@@ -189,8 +189,7 @@ footer {
     border-radius: 10px;
 }
 
-p.api-response {
-    white-space: pre;
+pre.api-response {
     font-family: monospace;
     background: #151718;
     padding: 1rem;
@@ -232,6 +231,12 @@ p.api-response {
     border-radius: 10px;
     margin-top: 1rem;
 }
+
+.json-punctuation { color: #5c5c5c; }
+.json-string { color: #db65d5; }
+.json-boolean { color: #ffab4a; }
+.json-integer { color: #66ff80; }
+
 @media(max-width: 560px) {
 
     header {
