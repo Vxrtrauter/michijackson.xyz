@@ -175,7 +175,7 @@ footer {
     background: #db65d528;
 }
 
-.base-api-url-frame {
+.base-information-frame {
         background: #1a1c1d;
         padding: 1rem;
         border-radius: 10px;
@@ -218,6 +218,13 @@ pre.api-response {
     margin-top: 1rem;
 }
 
+.endpoint-type-container {
+    background: #151718;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
 .request-type-subcontainer {
     background: #1a1c1d;
     padding: 0.5rem;
@@ -225,12 +232,48 @@ pre.api-response {
     margin-top: 1rem;
 }
 
+
 .api-url {
     background: #151718;
     padding: 1rem;
     border-radius: 10px;
     margin-top: 1rem;
 }
+
+.endpoint-url {
+    background: #151718;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    color: #8f8d8d
+}
+
+.endpoint-parameters-container {
+    background: #151718;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    color: #8f8d8d;
+}
+
+.endpoint-parameters-header {
+    margin-top: -0.3rem;
+    margin-bottom: 0.9rem;
+    font-size: 0.9rem;
+    grid-template-columns: 9rem 9rem 9rem 9rem;
+    display: grid;
+}
+
+.endpoint-parameters-content {
+    font-size: 1rem;
+    grid-template-columns: 9rem 9rem 9rem 9rem;
+    display: grid;
+}
+
+.endpoint-parameter { color: #ffab4a; }
+.endpoint-type { color: #db65d5 }
+.endpoint-required { color: #66ff80}
+.endpoint-description { color: #b1b0b0 }
 
 .json-punctuation { color: #5c5c5c; }
 .json-string { color: #db65d5; }
