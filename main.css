@@ -72,10 +72,23 @@ main p.title_subtext {
     font-size: 1.2rem;
 }
 
+.softwaremanager-scene {
+    perspective: 700px;
+    width: fit-content;
+}
+
 main img.softwaremanager-image {
     margin-top: 0rem;
     user-select: none;
+    transform: rotateX(8deg) rotateY(-12deg) rotateZ(2deg) scale(0.85) translateX(-1rem);
+    box-shadow: 15px 20px 15px #0f0f0f;
+
+    /* transition: transform 0.4s ease-out; */
 }
+
+/* main img.softwaremanager-image:hover {
+    transform: rotateX(8deg) rotateY(-13deg) rotateZ(2deg) scale(0.86) translateX(-1rem);
+} */
 
 main .introduction-text {
     position: relative;
@@ -96,13 +109,13 @@ main .introduction-text {
     vertical-align: top;
 }
 
-main .introduction {
+main .introduction-frame {
     text-align: center;
     position: relative;
     font-size: 0
 }
 
-main .introduction > * {
+main .introduction-frame > * {
     font-size: 1rem;
 }
 
@@ -152,12 +165,8 @@ main .introduction-text p {
     user-select: text;
 }
 
-.softwaremanager-image {
-    pointer-events: none; 
-}
 
 .softwaremanager-image-2 {
-    pointer-events: none; 
     display: none;
 }
 
@@ -270,6 +279,10 @@ pre.api-response {
     display: grid;
 }
 
+.request-frame {
+    margin-top: 1rem;
+}
+
 .endpoint-parameter { color: #ffab4a; }
 .endpoint-type { color: #db65d5 }
 .endpoint-required { color: #66ff80}
@@ -332,7 +345,7 @@ pre.api-response {
     }
 }
 
-@media (min-width: 561px) and (max-width: 1397px) {
+@media (min-width: 561px) and (max-width: 1393px) {
 
     header {
         padding: 1rem;
@@ -358,7 +371,8 @@ pre.api-response {
         margin-top: 0rem;
         z-index: 2;
         user-select: none;
-        margin-right: 0rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
         padding-bottom: 2rem;
     }
 
